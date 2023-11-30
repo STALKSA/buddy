@@ -64,23 +64,23 @@ export default function Settings(props: StProps): JSX.Element {
   const marks = [
     {
       value: 0,
-      label: 'Xslow',
+      label: '0.5x',
     },
     {
       value: 1,
-      label: 'Slow',
+      label: '1x',
     },
     {
       value: 2,
-      label: 'Medium',
+      label: '1.5x',
     },
     {
       value: 3,
-      label: 'Fast',
+      label: '2x',
     },
     {
       value: 4,
-      label: 'Xfast',
+      label: '2.5x',
     },
   ];
 

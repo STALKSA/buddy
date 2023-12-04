@@ -257,7 +257,7 @@ export default function Settings(props: StProps): JSX.Element {
         <ButtonExit variant="contained" href="/">
           <TitleButtonExit>{`Выйти`}</TitleButtonExit>
         </ButtonExit>
-        <ButtonSave variant="contained">
+        <ButtonSave variant="contained" href="/">
           <TitleButtonSave>{`Сохранить`}</TitleButtonSave>
         </ButtonSave>
       </GroupButton>

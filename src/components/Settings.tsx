@@ -60,7 +60,7 @@ export default function Settings(props: StProps): JSX.Element {
   const [learningLanguage, setLearningLanguage] = React.useState('');
   const [voiceType, setVoiceType] = React.useState('');
 
-  const [age, setAge] = React.useState('');
+  const [selectedRole, setSelectedRole] = React.useState('');
   const marks = [
     {
       value: 0,
@@ -85,7 +85,7 @@ export default function Settings(props: StProps): JSX.Element {
   ];
 
   const handleChange = (event: SelectChangeEvent) => {
-    setAge(event.target.value);
+    setSelectedRole(event.target.value);
   };
 
   function valueLabelFormat(value: number) {
@@ -198,7 +198,7 @@ export default function Settings(props: StProps): JSX.Element {
               <InputLabel>Роли</InputLabel>
               <Select
                 id="SelectRole"
-                value={age}
+                value={selectedRole}
                 onChange={handleChange}
               >
                 <MenuItem value={10}>Default</MenuItem>

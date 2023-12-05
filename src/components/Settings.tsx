@@ -226,9 +226,13 @@ export default function Settings(props: StProps): JSX.Element {
                id="SelectNativeLangue"
                value={nativeLanguage}
                onChange={handleNativeLanguageChange}
-            >
-               <MenuItem value={'Русский'}>Русский</MenuItem>
+            >   
+            <MenuItem value={'Русский'}>Русский</MenuItem>
             <MenuItem value={'Английский'}>Английский</MenuItem>
+            <MenuItem value={'Французский'}>Английский</MenuItem>
+            <MenuItem value={'Немецкий'}>Английский</MenuItem>
+            <MenuItem value={'Арабский'}>Английский</MenuItem>
+            <MenuItem value={'Итальянский'}>Английский</MenuItem>
             </Select>
           </FormControl>
         </Box>
@@ -247,8 +251,12 @@ export default function Settings(props: StProps): JSX.Element {
              value={learningLanguage}
              onChange={handleLearningLanguageChange}
             >
-              <MenuItem value={'Русский'} disabled={nativeLanguage === 'Русский'}>Русский</MenuItem>
+            <MenuItem value={'Русский'} disabled={nativeLanguage === 'Русский'}>Русский</MenuItem>
             <MenuItem value={'Английский'} disabled={nativeLanguage === 'Английский'}>Английский</MenuItem>
+            <MenuItem value={'Французский'} disabled={nativeLanguage === 'Английский'}>Английский</MenuItem>
+            <MenuItem value={'Немецкий'} disabled={nativeLanguage === 'Английский'}>Английский</MenuItem>
+            <MenuItem value={'Арабский'} disabled={nativeLanguage === 'Английский'}>Английский</MenuItem>
+            <MenuItem value={'Итальянский'} disabled={nativeLanguage === 'Английский'}>Английский</MenuItem>
             </Select>
           </FormControl>
         </Box>
